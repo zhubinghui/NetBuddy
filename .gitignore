@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+
+# Env / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+*.log
+logs/
+
+# Language-agnostic build artifacts (细化待定开发语言后调整)
+dist/
+build/
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
