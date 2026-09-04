@@ -2,9 +2,9 @@
 
 [简体中文](README.md) | **English**
 
-> An AI agent that cares for your network.
+> Your AI buddy for network operations, always at your side.
 
-NetBuddy is an AI agent harness for network operations. It operates network devices safely and reliably, performs offline fault diagnosis, and continuously evolves as an intelligent O&M tool.
+NetBuddy is the AI buddy of network operations engineers: an AI agent harness that operates network devices safely and reliably, performs offline fault diagnosis, and keeps evolving as an intelligent O&M tool.
 
 ## Status
 

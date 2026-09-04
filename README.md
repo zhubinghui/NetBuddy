@@ -2,9 +2,9 @@
 
 **简体中文** | [English](README.en.md)
 
-> An AI agent that cares for your network.
+> 网络运维的随身伙伴。
 
-NetBuddy 是一个面向网络运维场景的 AI Agent harness，可以安全&可靠的操作网络设备，也可以进行离线故障诊断，并且不断进化的智能运维工具。
+NetBuddy 是网络运维工程师的 AI 随身伙伴：一个面向网络运维场景的 AI Agent harness，可以安全、可靠地操作网络设备，也可以进行离线故障诊断，并且不断进化。
 
 ## 项目状态
 
