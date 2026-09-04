@@ -5,7 +5,7 @@
 
 ## 1. Pi Agent 基础概念
 
-Anthropic Pi 是一个 Agent 开发框架，核心特点：
+Pi 是一个 Agent 开发框架，核心特点：
 
 - **工具调度**: Agent 根据任务自主决策调用哪些 Tools
 - **流式执行**: 支持中途中断和控制
@@ -45,7 +45,7 @@ class SpecializedAgent(Agent):
     """专用 Agent 基类"""
     
     # Agent 配置
-    model = "claude-3-5-sonnet"
+    model = "<model-id>"  # 按部署环境配置
     system_prompt = "You are a network diagnosis expert..."
     
     # Tools 列表
