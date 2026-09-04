@@ -1,4 +1,4 @@
-# NetCare Pi Agent 框架设计
+# NetBuddy Pi Agent 框架设计
 
 **版本**: 1.0  
 **更新日期**: 2026-08-21
@@ -14,7 +14,7 @@ Anthropic Pi 是一个 Agent 开发框架，核心特点：
 
 ---
 
-## 2. NetCare Agent 体系
+## 2. NetBuddy Agent 体系
 
 ### 2.1 Agent 层级
 
@@ -303,8 +303,8 @@ class SpecializedAgent(Agent):
 ```python
 from pi import Tool
 
-class NetCareTool(Tool):
-    """NetCare Tool 基类"""
+class NetBuddyTool(Tool):
+    """NetBuddy Tool 基类"""
     
     name: str = "tool_name"
     description: str = "What this tool does"
@@ -469,7 +469,7 @@ downstream_input = {
 ```python
 import pytest
 from pi import Agent
-from netcare.agents import DiagnosisAgent
+from netbuddy.agents import DiagnosisAgent
 
 @pytest.mark.asyncio
 async def test_diagnosis_agent():

@@ -1,4 +1,4 @@
-# NetCare 架构设计总览
+# NetBuddy 架构设计总览
 
 **版本**: 1.0  
 **更新日期**: 2026-08-21  
@@ -6,7 +6,7 @@
 
 ## 1. 项目简介
 
-NetCare 是一个面向网络运维场景的 AI Agent 框架，基于 **Anthropic Pi** 框架构建。提供以下核心能力：
+NetBuddy 是一个面向网络运维场景的 AI Agent 框架，基于 **Anthropic Pi** 框架构建。提供以下核心能力：
 
 - **故障在线诊断**: 实时接入网络，自动采集分析日志，提供处理建议
 - **故障离线诊断**: 离线根因分析和推荐
@@ -194,5 +194,5 @@ NetCare 是一个面向网络运维场景的 AI Agent 框架，基于 **Anthropi
 
 ---
 
-**维护者**: NetCare Team  
+**维护者**: NetBuddy Team  
 **反馈和讨论**: 欢迎在 GitHub Issues/Discussions 提出建议

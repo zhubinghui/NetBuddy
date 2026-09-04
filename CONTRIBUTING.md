@@ -1,6 +1,6 @@
-# Contributing to NetCare
+# Contributing to NetBuddy
 
-感谢你对 NetCare 的兴趣！
+感谢你对 NetBuddy 的兴趣！
 
 ## 工作流程
 
@@ -21,5 +21,5 @@ docs: 补充架构设计文档
 
 ## 讨论
 
-- 架构与设计讨论请开 [Issue](https://github.com/zhubinghui/netcare/issues) 或 [Discussion](https://github.com/zhubinghui/netcare/discussions)
+- 架构与设计讨论请开 [Issue](https://github.com/zhubinghui/netbuddy/issues) 或 [Discussion](https://github.com/zhubinghui/netbuddy/discussions)
 - 重大变更请先开 Issue 讨论再动手

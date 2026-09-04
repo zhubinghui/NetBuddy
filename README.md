@@ -1,10 +1,10 @@
-# NetCare
+# NetBuddy
 
 **简体中文** | [English](README.en.md)
 
 > An AI agent that cares for your network.
 
-NetCare 是一个面向网络运维场景的 AI Agent harness，可以安全&可靠的操作网络设备，也可以进行离线故障诊断，并且不断进化的智能运维工具。
+NetBuddy 是一个面向网络运维场景的 AI Agent harness，可以安全&可靠的操作网络设备，也可以进行离线故障诊断，并且不断进化的智能运维工具。
 
 ## 项目状态
 

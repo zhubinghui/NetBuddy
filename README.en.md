@@ -1,10 +1,10 @@
-# NetCare
+# NetBuddy
 
 [简体中文](README.md) | **English**
 
 > An AI agent that cares for your network.
 
-NetCare is an AI agent harness for network operations. It operates network devices safely and reliably, performs offline fault diagnosis, and continuously evolves as an intelligent O&M tool.
+NetBuddy is an AI agent harness for network operations. It operates network devices safely and reliably, performs offline fault diagnosis, and continuously evolves as an intelligent O&M tool.
 
 ## Status
 

@@ -1,4 +1,4 @@
-# NetCare 安全和运维设计
+# NetBuddy 安全和运维设计
 
 **版本**: 1.0  
 **更新日期**: 2026-08-21
@@ -59,7 +59,7 @@
      │ 1. 登录
      ↓
 ┌──────────────┐         ┌──────────────┐
-│ NetCare      │────────→│ 身份提供商   │
+│ NetBuddy     │────────→│ 身份提供商   │
 │ 登录页面     │2.重定向  │ (Keycloak/   │
 └──────────────┘         │  Azure AD)   │
                          └──────┬───────┘
@@ -72,7 +72,7 @@
              4. 重定向
                     │
 ┌──────────────────┴───┐
-│ NetCare 后端         │ 5. 验证 token
+│ NetBuddy 后端        │ 5. 验证 token
 │ - 交换 access token  │
 │ - 获取用户信息       │
 └──────────────────────┘
@@ -95,8 +95,8 @@
     ],
     "iat": 1693737600,          # 签发时间
     "exp": 1693741200,          # 过期时间
-    "iss": "netcare-auth",
-    "aud": "netcare-api"
+    "iss": "netbuddy-auth",
+    "aud": "netbuddy-api"
 }
 ```
 
@@ -234,7 +234,7 @@ async def execute_diagnosis(request: DiagnosisRequest):
 
 ```
 ┌──────────────┐
-│ NetCare      │
+│ NetBuddy     │
 │ 应用进程     │
 └───────┬──────┘
         │ 1. 请求秘密 (secret_id)
@@ -266,7 +266,7 @@ class SecretManager:
     
     def __init__(self):
         self.vault_client = VaultClient(
-            url="https://vault.netcare.internal:8200"
+            url="https://vault.netbuddy.internal:8200"
         )
     
     async def get_device_credentials(self, device_id: str) -> dict:
@@ -457,7 +457,7 @@ async def execute_change(change_plan: ChangePlan):
     ┌─────────────┴──────────────┐
     │   私有网络 (VPC)            │
     │  ┌─────────────────────┐   │
-    │  │ NetCare 应用集群    │   │
+    │  │ NetBuddy 应用集群   │   │
     │  │ - API Server        │   │
     │  │ - Agent 服务        │   │
     │  │ - Worker            │   │
@@ -500,11 +500,11 @@ inbound_rules:
 
 # 出站规则
 outbound_rules:
-  - to: netcare_subnet
+  - to: netbuddy_subnet
     port: all
     protocol: tcp/udp
     action: allow
-    description: "到 NetCare 网络"
+    description: "到 NetBuddy 网络"
   
   - to: device_network
     port: [22, 23, 161, 443]
